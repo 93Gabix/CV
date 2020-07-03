@@ -192,6 +192,7 @@ button:focus,
 
 @media (max-width: 600px) {
     .left-col-block {
+        background-color: #222f3e;
         width: 100%;
         position: relative;
     }
@@ -230,9 +231,10 @@ button:focus,
     padding: 50px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 602px) {
     .section-wrapper {
         padding: 30px 20px;
+        background-color: #283849;
     }
 }
 
@@ -340,38 +342,20 @@ button:focus,
 }
 
 @media (max-width: 600px) {
-    .header .profile-img {
+    .header .perfil-img {
+        width: 155%;
         z-index: 1;
     }
     .header .content {
+        top: 73%;
+        margin-left: 25%;
         z-index: 2;
     }
 }
 
 
 /*-------------------
- * Intro
- *-------------------*/
-
-.intro {}
-
-
-/*-------------------
- * Expertise
- *-------------------*/
-
-.expertise-item {
-    margin-bottom: 20px;
-}
-
-.expertise-item h3 {
-    margin-bottom: 5px;
-    font-weight: 700;
-}
-
-
-/*-------------------
- * Skills Progressbar
+ * Skills Habilidades
  *-------------------*/
 
 .progress-item {
@@ -384,75 +368,6 @@ button:focus,
     font-weight: 400;
     display: inline-block;
     margin-bottom: 5px;
-}
-
-.progress-item .progress {
-    height: 4px;
-    box-shadow: none;
-    border-radius: 5px;
-}
-
-.progress-item .progress-bar {
-    background-color: #2a54f5;
-    box-shadow: none;
-    text-align: right;
-}
-
-.progress-item .progress-percent {
-    font-size: 10px;
-    background-color: #313131;
-    position: absolute;
-    top: 5px;
-    padding: 0 8px;
-    border-radius: 3px;
-}
-
-.progress-item .progress-percent::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -4px;
-    border-top: 6px solid #313131;
-    border-right: 8px solid transparent;
-}
-
-
-/*-------------------
- * Portfolio
- *-------------------*/
-
-.portfolio-item {
-    position: relative;
-    display: block;
-    margin-bottom: 30px;
-}
-
-.portfolio-item .portfolio-thumb img {
-    height: auto;
-    display: block;
-    max-width: 100%;
-}
-
-.portfolio-item .portfolio-info {
-    position: absolute;
-    bottom: 0;
-    padding: 30px 15px 5px;
-    width: 100%;
-    background: -webkit-linear-gradient( top, transparent 0%, rgba(0, 0, 0, 0.5) 100%);
-}
-
-.portfolio-item .portfolio-info h3 {
-    margin: 0;
-    line-height: 1;
-    color: #ffffff;
-}
-
-.portfolio-item .portfolio-info small {
-    color: #ffffff;
-}
-
-.portfolio-item:hover .portfolio-info {
-    background: -webkit-linear-gradient( top, transparent 0%, rgba(42, 84, 245, 0.5) 100%);
 }
 
 
@@ -500,90 +415,4 @@ address {
 
 label {
     color: #ffffff !important;
-}
-
-
-/*-------------------
- * Form Style
- *-------------------*/
-
-.form-control {
-    height: 50px;
-    padding: 0 20px;
-    font-size: 13px;
-    line-height: 50px;
-    color: #969595;
-    border: 1px solid #cccccc;
-    border-radius: 0;
-    box-shadow: none;
-    box-sizing: border-box;
-}
-
-.form-control:focus,
-.form-control:active {
-    box-shadow: none;
-}
-
-
-/* --------------------------------------------
- *   Footer
- *---------------------------------------------- */
-
-
-/* Copyright */
-
-.footer {
-    padding: 30px 50px;
-}
-
-.footer .copyright-section {
-    font-size: 13px;
-    color: #888888;
-}
-
-.footer .copyright-section .copytext {
-    font-weight: 400;
-    display: block;
-}
-
-@media (max-width: 480px) {
-    .footer {
-        padding: 10px 20px;
-    }
-}
-
-
-/* ====================
- * Preloader
- * ====================*/
-
-#preloader {
-    background: #2a54f5;
-    bottom: 0;
-    left: 0;
-    position: fixed;
-    right: 0;
-    top: 0;
-    z-index: 9999;
-}
-
-#status,
-.status-mes {
-    background-image: url(../img/puff.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 200px;
-    left: 50%;
-    margin: -100px 0 0 -100px;
-    position: absolute;
-    top: 50%;
-    width: 200px;
-}
-
-.status-mes {
-    background: none;
-    left: 0;
-    margin: 0;
-    text-align: center;
-    top: 65%;
 }
